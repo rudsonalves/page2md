@@ -19,7 +19,7 @@ func main() {
 	// Check for the correct number of arguments
 	if len(os.Args) < 2 {
 		log.Println("No URL provided, exiting")
-		fmt.Println("Usage: go run script.go <url> [output_file.md]")
+		fmt.Println("Usage: page2md <url> [output_file.md]")
 		os.Exit(1)
 	}
 	urlInput := os.Args[1]
