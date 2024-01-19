@@ -16,7 +16,7 @@ func HtmlToMarkdown(html string) ([]byte, error)
 
 ### Package files
 
-[converter.go](http://localhost:6060/src/page2md/converter/converter.go)
+[converter.go](https://github.com/rudsonalves/page2md/blob/main/converter/converter.go)
 
 #### func HtmlToMarkdown
 
@@ -36,7 +36,7 @@ func DownloadPage(url string) (string, error)
 
 ### Package files
 
-[downloader.go](http://localhost:6060/src/page2md/downloader/downloader.go)
+[downloader.go](https://github.com/rudsonalves/page2md/blob/main/downloader/downloader.go)
 
 #### func DownloadPage ¶
 
@@ -57,7 +57,7 @@ DownloadPage fetches the content of the given URL and returns it as a string.
 
 ### Package files
 
-[markdown.go](http://localhost:6060/src/page2md/markdown/markdown.go)
+[markdown.go](https://github.com/rudsonalves/page2md/blob/main/markdown/markdown.go)
 
 #### func ApplyFilters
 
@@ -85,7 +85,7 @@ ApplyMarkdownFilters applies several filters to clean up and format the markdown
 
 ### Package files
 
-[utils.go](http://localhost:6060/src/page2md/utils/utils.go)
+[utils.go](https://github.com/rudsonalves/page2md/blob/main/utils/utils.go)
 
 #### func GetLastPartOfURL
 
