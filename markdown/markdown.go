@@ -2,10 +2,11 @@ package markdown
 
 import (
 	"os"
-	"page2md/utils"
 	"regexp"
 	"strings"
 	"unicode/utf8"
+
+	"github.com/rudsonalves/page2md/utils"
 )
 
 // compileRegex compiles all regular expressions used in applyMarkdownFilters.

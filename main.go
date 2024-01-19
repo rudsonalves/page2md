@@ -4,10 +4,11 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"page2md/converter"
-	"page2md/downloader"
-	"page2md/markdown"
-	"page2md/utils"
+
+	"github.com/rudsonalves/page2md/converter"
+	"github.com/rudsonalves/page2md/downloader"
+	"github.com/rudsonalves/page2md/markdown"
+	"github.com/rudsonalves/page2md/utils"
 )
 
 func main() {
@@ -19,7 +20,7 @@ func main() {
 	// Check for the correct number of arguments
 	if len(os.Args) < 2 {
 		log.Println("No URL provided, exiting")
-		fmt.Println("Usage: page2md <url> [output_file.md]")
+		fmt.Println("Usage: page2md <url> [outputFileName.md]")
 		os.Exit(1)
 	}
 	urlInput := os.Args[1]
@@ -37,7 +38,7 @@ func main() {
 		outputFile, err = utils.GetLastPartOfURL(urlInput)
 		outputFile += ".md"
 		if err != nil {
-			outputFile = "page2md_output.md"
+			outputFile = "output.md"
 		}
 	}
 
